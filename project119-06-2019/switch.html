@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+
+        //for (var i = 2; i <= 10; i += 2) {
+            var i = 1;  // with 1 odd and 0 even number. 
+            switch (i % 2) {
+                case 0:
+                    number = 'even';
+                    break;
+                case 1:
+                    number = 'odd';
+                    break;
+            }
+       // }
+
+
+
+        document.getElementById('demo').innerHTML = "number is:" + number;
+
+
+
+
+    </script>
+</body>
+
+</html>

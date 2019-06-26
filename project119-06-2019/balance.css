@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cup{
+    width: 150px;
+    height: 180px;
+    border: 5px solid #fff;
+    border-top: 2px solid transparent;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column-reverse;  }  #water{
+    top: 0px;
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    position: relative;
+  }
+  .handle {
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    right: -30px;
+    top: 40px;
+    border: 10px solid #fff;
+    border-left: 0px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    z-index: -1;
+  }
+ 

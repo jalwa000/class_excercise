@@ -1,0 +1,33 @@
+body {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: black;
+  }
+  
+  #wheel {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin-top: 3%;
+    transition: transform 10s cubic-bezier(.5,.1,.15,1);
+    transform: rotate(0deg);
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  #button {
+    font-size: 24px;
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+    color: white;
+    background: #89bd46;
+    border: none;
+    display: inline-block;
+    margin: 25px;
+    z-index: 3;
+  }
+  
+  #button:hover, #button:focus {
+    background: #89bd46;
+  }

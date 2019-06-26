@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var now = new Date (); //current date
+    var now = new Date ('october 8 1976'); // you will get same day, month, year
+    document.write(now.toDateString()); // day, month, year
+    document.write(now.getDate());      // day
+    document.write(now.getMonth());     // month
+    document.write(now.getFullYear());  //full year
+    document.write(now.getHours());     // current hour
+    document.write(now.getMinutes()); // current minutes
+    document.write(now.getSeconds()); // current seconds
+    </script>
+    <script>
+     var now = new Date ();
+     now.setDate(25);
+     document.write(now);
+    </script>
+</body>
+</html>

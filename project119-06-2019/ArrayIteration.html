@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //js nuggets
+   // Array iteration: 8 methods
+
+            //forEach
+   [1,2,3,].forEach(function(item, index){
+    console.log(item, index)
+   });
+
+             //map
+   var three = [1,2,3];
+   var double = three.map(function(item){
+       return item * 2;
+   });
+   console.log(double)
+
+            //filter
+    var ints = [1,2,3];
+    var even = ints.filter(function(item){
+            return item % 2===0;
+               
+            });
+    console.log(even); 
+
+            //reduce
+    var sum = [1,2,3].reduce(function(result, item){
+        return result + item;
+    },0);        
+    console.log(sum);
+
+    var sum = [1,2,3,-1,4].some(function(item){
+        return item < 0;
+    });
+    console.log(sum);
+
+            // every
+    var sum = [1,2,3].every(function(item){
+            return item > 0;
+    });
+    console.log(sum);
+
+            // find
+    var object = [{id:'a'},{id:'b'},{id:'c'}];
+    var found = object.find(function(item){
+        return item.id=='b';
+    });
+    console.log(found);
+
+            //findindex     
+    var object1 = [{id: 'a'},{id: 'b'}, {id: 'c'}];
+    var found = object.findIndex(function(item){
+        return item.id==='b';
+    });
+    console.log(found);          
+
+    </script>
+</body>
+</html>

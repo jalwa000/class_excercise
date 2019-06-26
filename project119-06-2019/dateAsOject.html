@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*     1...createn a date object,
+    2...change it to sring,
+        3...split it,
+            4...display only year, month, day, with British format. */        var current = new Date();
+console.log('current: '+current);
+var newFormat = current.toString();
+var newDatum = newFormat.split(" ");
+console.log('new: '+newDatum[0]);
+//var newCome = newDatum.push();       
+ console.log(newDatum[2]+'_'+newDatum[1]+'_'+newDatum[3]);   
+ </script>
+</body>
+</html>
